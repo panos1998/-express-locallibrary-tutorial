@@ -13,7 +13,7 @@ var app = express();
 app.use(compression()); //Compress all routes
 app.use(helmet());
 var mongoose = require('mongoose');
-var dev_db_url='mongodb+srv://paok:paokaras98@cluster0.fhdfj.mongodb.net/Database2?retryWrites=true&w=majority';
+var dev_db_url='mongodb+srv://paok:paokaras98@cluster0.fhdfj.mongodb.net/Database3?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
